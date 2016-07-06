@@ -1,0 +1,23 @@
+{
+  "name": "m.spike",
+  "version": "0.0.0",
+  "description": "m.spike",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivoputzer/m.spike.git"
+  },
+  "keywords": [],
+  "author": "Ivo von Putzer Reibegg <ivo.putzer@gmail.com> (https://github.com/ivoputzer)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivoputzer/m.spike/issues"
+  },
+  "homepage": "https://github.com/ivoputzer/m.spike#readme",
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}

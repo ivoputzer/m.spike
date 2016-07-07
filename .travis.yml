@@ -28,9 +28,15 @@ matrix:
 #install:
 #before_script:
 #script:
-#after_success:
+
+after_success:
+  - npm version patch
+
 #after_failure:
 #before_deploy:
 #deploy:
-#after_deploy:
+
+# after_deploy:
+  # - git version
+
 #after_script:

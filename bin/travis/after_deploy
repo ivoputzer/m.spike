@@ -1,1 +1,6 @@
 #!/usr/bin/env bash
+
+# git branch | grep -q npm || git branch npm && git checkout npm
+# git add --all
+# npm run version
+# git commit --amend --message

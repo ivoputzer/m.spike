@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+
+version=npm run version

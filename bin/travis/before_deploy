@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
+npm run bump
 
-# version=npm run bumpnpm run version
+git add --all
+git tag -a -m $(json version -f package.json)
+git commit --amend --no-edit

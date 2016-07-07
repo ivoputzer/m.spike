@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ivoputzer/m.spike#readme",
   "devDependencies": {
+    "json": "^9.0.4",
     "mocha": "^2.5.3"
   },
   "config": {

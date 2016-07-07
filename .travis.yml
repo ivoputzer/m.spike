@@ -6,12 +6,12 @@ node_js:
   - 6.2.1
   - 6.2.2
   - 6.3.0
-# cache:
-#   directories:
-#     - node_modules
-# install:
-#   - npm install
-#   - npm prune
+matrix:
+  fast_finish: true
+# before_deploy:
+# deploy:
+# after_deploy:
+# after_script:
 # script:
 #   - npm test
 #   - npm version patch
@@ -23,3 +23,14 @@ node_js:
 #   on:
 #     repo: ivoputzer/node-module
 #     branch: master
+
+#before_install:
+#install:
+#before_script:
+#script:
+#after_success:
+#after_failure:
+#before_deploy:
+#deploy:
+#after_deploy:
+#after_script:

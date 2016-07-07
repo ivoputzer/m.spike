@@ -1,11 +1,11 @@
 {
   "name": "m.spike",
-  "version": "0.0.7",
+  "version": "0.0.13",
   "description": "m.spike",
   "main": "index.js",
   "scripts": {
     "test": "mocha --full-trace --check-leaks",
-    "version": ""
+    "bump": "bin/bump"
   },
   "repository": {
     "type": "git",

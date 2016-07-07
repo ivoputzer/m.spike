@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-version=npm run version
+
+# version=npm run bumpnpm run version

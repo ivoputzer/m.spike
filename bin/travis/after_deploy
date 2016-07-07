@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# git branch | grep -q npm || git branch npm && git checkout npm
-# git add --all
-# npm run version
-# git commit --amend --message
+git branch | grep -q npm || git branch npm && git checkout npm
+git add --all
+npm tag -am $(json version -f package.json)
+git commit --amend --message

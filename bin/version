@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+function callback(err, status) {
+
+    if ( error !== undefined ) {
+       // ...
+    } else {
+
+        if ( code === 0 ) {
+          // Here goes the code that needs to be executed if the build succeeded
+        } else if ( code === 1) {
+          // Here goes the code that needs to be executed if the build failed
+        }
+
+    }
+
+}
+
+travisAfterAll(callback);

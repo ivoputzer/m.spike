@@ -1,6 +1,6 @@
 const {ok} = require('assert')
 
-describe('test/module/index.js', function () {
+describe('test ', function () {
   it('should do what...', function () {
     ok(true)
   });

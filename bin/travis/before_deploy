@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-npm run bump
+npm run version-bump
 
 git add --all
 git tag -a -m $(json version -f package.json)

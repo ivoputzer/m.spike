@@ -8,21 +8,21 @@ git checkout head~2 -- test
 
   npm test -- $(find test/module -type f -name \*.js) || {
     git status -sb
+    git checkout $branch
     npm version major -m "%s"
-    git checkout $branch -- test
     exit 0
   }
 
   npm test -- $(find test -type f -name \*.js -not -path test/module/\*) || {
     git status -sb
+    git checkout $branch
     npm version minor -m "%s"
-    git checkout $branch -- test
     exit 0
   }
 
   git status -sb
+  git checkout $branch
   npm version patch -m "%s"
-  git checkout $branch -- test
   exit 0
 }
 

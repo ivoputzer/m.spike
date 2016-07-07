@@ -1,19 +1,15 @@
-#!/usr/bin/env node
+#!/usr/bin/env bash
 
-function callback(err, status) {
+# git reset --hard origin/master
+npm run test
 
-    if ( error !== undefined ) {
-       // ...
-    } else {
+git checkout head~2 -- test
 
-        if ( code === 0 ) {
-          // Here goes the code that needs to be executed if the build succeeded
-        } else if ( code === 1) {
-          // Here goes the code that needs to be executed if the build failed
-        }
+[ -d test/module ] && {
+  npm run test -- --recursive test/module
+    # if this fails
+      npm version major -m "%s"
+      exit 0
 
-    }
-
+  npm run test -- $(find test -type f -name *.js -not -path test/module/\*)
 }
-
-travisAfterAll(callback);

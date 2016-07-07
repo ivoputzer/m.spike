@@ -13,7 +13,7 @@ git checkout head~2 -- test
     exit 0
   }
 
-  npm test -- $(find test -type f -name \*.js -not -path test/module/\*) && {
+  npm test -- $(find test -type f -name \*.js -not -path test/module/\*) || {
     npm version minor -m "%s"
     git checkout $branch
     exit 0

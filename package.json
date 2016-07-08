@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --full-trace --check-leaks",
-    "bump": "bin/version-bump"
+    "version-bump": "bin/version-bump"
   },
   "repository": {
     "type": "git",

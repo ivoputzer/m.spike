@@ -4,4 +4,4 @@ npm run version-bump
 
 version=$(json version -f package.json)
 
-git tag -a -m $version
+git tag -a $version -m $version

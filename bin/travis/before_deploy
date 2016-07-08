@@ -2,6 +2,8 @@
 
 npm run version-bump
 
-version=$(json version -f package.json)
+$TRAVIS_BUILD_VERSION=$(json version -f package.json)
 
-git tag -a $version -m $version
+git config user.name "Travis CI"
+git config user.email "builds@travis-ci.com"
+git tag -a $TRAVIS_BUILD_VERSION -m $TRAVIS_BUILD_VERSION
